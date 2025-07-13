@@ -1,0 +1,85 @@
+---
+title: "Day 1 - Building Real-time Drawing App: Lessons Learned"
+publishedAt: "2025-07-14"
+summary: "Today I worked on a real-time drawing application and learned valuable lessons about WebSocket connections, Prisma relations, and error handling."
+---
+
+# Day 1 - Building Real-time Drawing App: Lessons Learned
+
+## What I Did Today
+
+Today I worked on building a real-time collaborative drawing application. I encountered several challenges with WebSocket connections, database relationships, and error handling that taught me important lessons about building real-time applications.
+
+## Lessons Learned
+
+### Type Safety
+- **Always validate data types when working with databases**
+- Learned the hard way that Prisma requires proper type definitions
+- Missing required fields can cause silent failures
+
+### Error Handling
+- **WebSocket connections fail silently - proper error handling is crucial**
+- Implemented proper error boundaries and connection state management
+- Added retry mechanisms for dropped connections
+
+### Prisma Relations
+- **Understanding foreign key relationships and required fields**
+- Learned how to properly set up one-to-many and many-to-many relationships
+- Importance of cascade deletes and referential integrity
+
+### Real-time Architecture
+- **Separating HTTP and WebSocket concerns for different use cases**
+- HTTP for initial data loading and authentication
+- WebSocket for real-time drawing updates and collaboration
+
+## Code Snippet of the Day
+
+```typescript
+// WebSocket connection with proper error handling
+const socket = new WebSocket(WS_URL);
+
+socket.onopen = () => {
+  console.log('Connected to drawing room');
+  setIsConnected(true);
+};
+
+socket.onerror = (error) => {
+  console.error('WebSocket error:', error);
+  setIsConnected(false);
+  // Implement retry logic
+};
+
+socket.onclose = () => {
+  console.log('Connection closed');
+  setIsConnected(false);
+  // Attempt to reconnect
+};
+```
+
+## Next Steps
+
+- [ ] **Implement user authentication**
+  - Add JWT tokens for secure user sessions
+  - Implement login/logout functionality
+  
+- [ ] **Add drawing tools**
+  - Brush tool with different sizes
+  - Shape tools (rectangle, circle, line)
+  - Color picker and palette
+  
+- [ ] **Optimize WebSocket message handling**
+  - Implement message queuing for offline scenarios
+  - Add message compression for better performance
+  
+- [ ] **Add room management features**
+  - Create/join drawing rooms
+  - User permissions and roles
+  - Room persistence and history
+
+## Reflection
+
+Building real-time applications is more complex than I initially thought. The combination of WebSocket connections, database relationships, and error handling requires careful planning. I'm excited to continue improving this project and implementing the next features.
+
+---
+
+*This is Day 1 of my daily blogging challenge. Follow along as I document my journey in tech and personal growth!*
