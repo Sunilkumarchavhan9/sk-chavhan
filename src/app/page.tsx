@@ -153,7 +153,7 @@ export default function Page() {
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
                 >
-                 DM on Twitter with a clear question or something you'd like to talk about 
+                 DM on Twitter with a clear question or something you&#39;d like to talk about
                 </Link>{" "}
                 
               </p>
