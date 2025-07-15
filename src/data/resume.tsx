@@ -3,7 +3,7 @@ import { Currency, HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "(V0)-VΣGIƬӨ",
-  initials: "DV",
+  initials: "SK",
   url: "https://v0-chavhan.vercel.app",
   location: "Bengaluru",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
@@ -68,7 +68,7 @@ export const DATA = {
       start: "2022",
       end: "2026",
       href: "https://www.dsu.edu.in/about-us/dsu",
-      logoUrl: "image.png", // Add your college logo here
+      logoUrl: "dsu-logo-2.webp", // Add your college logo here
     },
   ],
   projects: [
