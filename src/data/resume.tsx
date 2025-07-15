@@ -68,7 +68,7 @@ export const DATA = {
       start: "2022",
       end: "2026",
       href: "https://www.dsu.edu.in/about-us/dsu",
-      logoUrl: "dsu-logo-2.webp", // Add your college logo here
+      logoUrl: "dsu-logo3.jpg", // Add your college logo here
     },
   ],
   projects: [
