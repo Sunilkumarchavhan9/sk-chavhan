@@ -169,7 +169,7 @@ export const DATA = {
              links: [
          {
            type: "Click here...",
-           href: "https://sk-chavhan-portfolio-git-main-sunilkumarchavhan9s-projects.vercel.app/",
+           href: "https://v0dev9.vercel.app/",
            icon: <Icons.globe />,
          },
        ],
