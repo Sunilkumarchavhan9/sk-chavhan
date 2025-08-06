@@ -128,7 +128,7 @@ export const DATA = {
     {
       title: "Ten-Sol",
       href: "",
-      dates: " 2025",
+      dates: " 2025 July",
       active: true,
       description:
         "Solana Wallet Adapter is a set of tools that makes it easy to connect different Solana wallets (like Phantom, Solflare, Backpack) to your web app. ",
@@ -154,7 +154,7 @@ export const DATA = {
     {
       title: "portfolio",
       href: "",
-      dates: " 2025",
+      dates: " 2025 June",
       active: true,
       description:
         "",
@@ -181,7 +181,7 @@ export const DATA = {
     {
       title: "Zephyr",
       href: "",
-      dates: "July 2024",
+      dates: "August 2025",
       active: true,
       description:
         "landing Page ",
