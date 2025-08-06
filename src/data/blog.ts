@@ -41,8 +41,17 @@ export async function getPost(slug: string) {
   }
   
   let source = fs.readFileSync(filePath, "utf-8");
-  const { content: rawContent, data: metadata } = matter(source);
+  const { content: rawContent, data } = matter(source);
   const content = await markdownToHTML(rawContent);
+  
+  // Type assertion for metadata
+  const metadata: Metadata = {
+    title: data.title || "",
+    publishedAt: data.publishedAt || "",
+    summary: data.summary || "",
+    image: data.image,
+  };
+  
   return {
     source: content,
     metadata,
