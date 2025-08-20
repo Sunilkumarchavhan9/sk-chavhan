@@ -13,15 +13,66 @@ export const DATA = {
     " computer science Student  Developer by heart explorer by natureI enjoy building clean functional products and tweeting about the process",
   avatarUrl: "/sunil.jpg",
   skills: [
+    // Programming Languages
+    "C++",
+    "TypeScript",
+    "JavaScript",
+    "C",
+    "Solidity",
+    
+    // Frontend
+    "HTML",
+    "CSS",
     "React",
     "Next.js",
-    "Typescript",
+    "Tailwind CSS",
+    "Shadcn UI",
+    
+    // Backend
     "Node.js",
-    "Postgres",
-    "prisma",
+    "Express.js",
+    "Socket.IO",
+    "REST APIs",
+    "WebSockets",
+    "GraphQL",
+    
+    // Databases
+    "PostgreSQL",
+    "MongoDB",
+    "MySQL",
+    "Prisma",
+    
+    // DevOps & Tools
     "Docker",
-    "C++",
-    "web3"
+    "GitHub Actions",
+    "AWS EC2",
+    "Nginx",
+    "Git",
+    "GitLab",
+    "CI/CD",
+    
+    // Blockchain & DeFi
+    "Ethereum Virtual Machine (EVM)",
+    "Solidity Smart Contracts",
+    "Web3.js",
+    "Ethers.js",
+    "Solana Wallet Adapter",
+    "Ethereum Wallet Adapter",
+    "DeFi Primitives",
+    
+    // Security & Auditing
+    "Smart Contract Security",
+    "DeFi Attack Vectors",
+    
+    // Architecture & Specialized
+    "System Design",
+    "Data Structures & Algorithms",
+    "Web3",
+    "Authentication",
+    "Microservices",
+    "Monorepo",
+    "Turborepo",
+    "API Design"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -181,7 +232,7 @@ export const DATA = {
     {
       title: "Zephyr",
       href: "",
-      dates: "July 2024",
+      dates: "July 2025",
       active: true,
       description:
         "landing Page ",
@@ -203,7 +254,32 @@ export const DATA = {
       image: "",
       video:
         "/Zephyr.mp4",
-    },
+    },{
+      title: "PinMind",
+      href: "",
+      dates: "August 2025",
+      active: true,
+      description:
+        "landing Page ",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+             links: [
+         {
+           type: "Click here...",
+           href: "https://github.com/Sunilkumarchavhan9/landing-page-",
+           icon: <Icons.globe />,
+         },
+       ],
+      image: "",
+      video:
+        "/pinmind.mp4",
+    }
    
   ],
   hackthons:[],
