@@ -53,11 +53,12 @@ export const DATA = {
     
     // Blockchain & DeFi
     "Ethereum Virtual Machine (EVM)",
-    "Solidity Smart Contracts",
+    "Solidity" ,
+   " Smart Contracts",
     "Web3.js",
     "Ethers.js",
-    "Solana Wallet Adapter",
-    "Ethereum Wallet Adapter",
+    "Solana ",
+    "Ethereum ",
     "DeFi Primitives",
     
     // Security & Auditing
@@ -66,7 +67,6 @@ export const DATA = {
     
     // Architecture & Specialized
     "System Design",
-    "Data Structures & Algorithms",
     "Web3",
     "Authentication",
     "Microservices",
