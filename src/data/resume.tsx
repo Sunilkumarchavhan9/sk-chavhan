@@ -150,6 +150,36 @@ export const DATA = {
         "/V0.mp4",
     },
     {
+      title: "LinkBird",
+      href: "",
+      dates: "Sept 2025",
+      active: true,
+      description:
+        "Automate LinkedIn outreach securely, generate leads, and boost meetings without any risk of getting banned ",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL + Drizzle ORM (via @vercel/postgres)",
+        "Prisma",
+        "TailwindCSS",
+        "Shadcn UI",
+        "etter Auth (credentials + Google)",
+        "TanStack Query (React Query)",
+        "Zustand",
+        "Neon.Tech"
+      ],
+             links: [
+         {
+           type: "Click here...",
+           href: "https://linkbird-kandid.vercel.app/",
+           icon: <Icons.globe />,
+         },
+       ],
+      image: "",
+      video:
+        "/linkbird.mp4",
+    },
+    {
       title: "DocStart",
       href: "",
       dates: "August2025",
