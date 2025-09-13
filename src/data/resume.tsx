@@ -177,7 +177,7 @@ export const DATA = {
        ],
       image: "",
       video:
-        "/linkbird.mp4",
+        "/linkbird.mp4https://github.com/Sunilkumarchavhan9/sk-chavhan.git",
     },
     {
       title: "DocStart",
