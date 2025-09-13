@@ -175,9 +175,9 @@ export const DATA = {
            icon: <Icons.globe />,
          },
        ],
-      image: "",
+      image: "linkbird.png",
       video:
-        "/linkbird.mp4https://github.com/Sunilkumarchavhan9/sk-chavhan.git",
+        "",
     },
     {
       title: "DocStart",
