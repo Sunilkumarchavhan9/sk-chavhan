@@ -4,7 +4,7 @@ import { AnimatePresence, motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 
 interface BlurFadeProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
   variant?: {
     hidden: { y: number };
@@ -51,7 +51,7 @@ const BlurFade = ({
         }}
         className={className}
       >
-        {children}
+        {children ?? null}
       </motion.div>
     </AnimatePresence>
   );

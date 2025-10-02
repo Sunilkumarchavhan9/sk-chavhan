@@ -2,13 +2,13 @@ import { Icons } from "@/components/icons";
 import { Currency, HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "(V0)-VΣGIƬӨ",
+  name: "jinx⚡︎",
   initials: "SK",
   url: "https://v0-chavhan.vercel.app",
   location: "Bengaluru",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Building cool stuff. Tweeting often.",
+    "Building cool stuff.Tweet often(SunilChavhan).",
   summary:
     " computer science Student  Developer by heart explorer by natureI enjoy building clean functional products and tweeting about the process",
   avatarUrl: "/sunil.jpg",
@@ -18,7 +18,6 @@ export const DATA = {
     "TypeScript",
     "JavaScript",
     "C",
-    "Solidity",
     
     // Frontend
     "HTML",
@@ -50,8 +49,6 @@ export const DATA = {
     "Git",
     "GitLab",
     "CI/CD",
-    
-    // Blockchain & DeFi
     "Ethereum Virtual Machine (EVM)",
     "Solidity" ,
    " Smart Contracts",
@@ -64,7 +61,6 @@ export const DATA = {
     // Security & Auditing
     "Smart Contract Security",
     "DeFi Attack Vectors",
-    
     // Architecture & Specialized
     "System Design",
     "Web3",
@@ -147,7 +143,7 @@ export const DATA = {
        ],
       image: "",
       video:
-        "/V0.mp4",
+        "/xs.mp4",
     },
     {
       title: "LinkBird",
@@ -175,7 +171,7 @@ export const DATA = {
            icon: <Icons.globe />,
          },
        ],
-      image: "linkbird.png",
+      image: "/linkbird.png",
       video:
         "",
     },
@@ -230,7 +226,7 @@ export const DATA = {
        ],
       image: "",
       video:
-        "/tensol.mp4",
+        "/sol.mp4",
     }, 
     {
       title: "portfolio",

@@ -1,5 +1,5 @@
 import { Dock, DockIcon } from "@/components/magicui/dock";
-import { ModeToggle } from "@/components/mode-toggle";
+import { AnimatedThemeToggler } from "@/registry/magicui/animated-theme-toggler";
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -63,7 +63,9 @@ export default function Navbar() {
         <DockIcon>
           <Tooltip>
             <TooltipTrigger asChild>
-              <ModeToggle />
+              <div className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "size-12 border-0 bg-transparent hover:bg-transparent")}> 
+                <AnimatedThemeToggler />
+              </div>
             </TooltipTrigger>
             <TooltipContent>
               <p>Theme</p>

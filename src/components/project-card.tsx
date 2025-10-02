@@ -6,6 +6,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { CardSpotlight } from "@/components/ui/card-spotlight";
+import { CheckIcon } from "@/components/ui/check-icon";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -41,11 +43,12 @@ export function ProjectCard({
   className,
 }: Props) {
   return (
-    <Card
-      className={
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
-      }
-    >
+    <CardSpotlight className="h-full w-full p-0">
+      <Card
+        className={
+          "flex flex-col overflow-hidden border-0 bg-transparent hover:shadow-lg transition-all duration-300 ease-out h-full"
+        }
+      >
       <Link
         href={href || "#"}
         className={cn("block cursor-pointer", className)}
@@ -72,7 +75,10 @@ export function ProjectCard({
       </Link>
       <CardHeader className="px-2">
         <div className="space-y-1">
-          <CardTitle className="mt-1 text-base">{title}</CardTitle>
+          <CardTitle className="mt-1 text-base flex items-center gap-2">
+            
+            {title}
+          </CardTitle>
           <time className="font-sans text-xs">{dates}</time>
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
@@ -112,5 +118,6 @@ export function ProjectCard({
         )}
       </CardFooter>
     </Card>
+    </CardSpotlight>
   );
 }
