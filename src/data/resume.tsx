@@ -309,5 +309,7 @@ export const DATA = {
    
   ],
   hackthons:[],
-  work: [],
+  work: [
+    
+  ],
 } as const;
